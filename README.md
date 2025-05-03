@@ -213,6 +213,11 @@ rf.fit(X_train, y_train)
 
 * Random Forest outperformed Naive Bayes, achieving perfect classification on the test set.
 * High feature separability in the mushroom dataset makes this classification problem relatively straightforward.
+* Random Forest perfectly separates classes on this dataset.
+
+* Overall, Naive Bayes performs strongly but misses a few poisonous cases.
+
+* Odor and cap-shape are the most predictive features.
 
 ## Future Work
 
