@@ -64,7 +64,7 @@ This section summarizes the confusion matrices for the Naive Bayes classifier on
 
 ## 1. Training Set Confusion Matrix
 
-Naive Bayes: Training Confusion Matrix[https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Testing%20confusion%20matrix.png]
+Naive Bayes: ![Training Set Confusion Matrix](https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Testing%20confusion%20matrix.png)
 
 ```
  Predicted ⟶   0 (edible)    1 (poisonous)
@@ -83,7 +83,7 @@ True 0 (edible)      3366               0
 
 ## 2. Validation Set Confusion Matrix
 
-Naive Bayes: Validation Confusion Matrix [https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Validation%20confusion%20matrix.png]
+Naive Bayes: ![Validation Confusion Matrix](https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Validation%20confusion%20matrix.png)
 
 ```
  Predicted ⟶   0 (edible)    1 (poisonous)
@@ -102,7 +102,7 @@ True 0 (edible)       421               0
 
 ## 3. Testing Set Confusion Matrix
 
-Naive Bayes: Testing Confusion Matrix[https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Testing%20confusion%20matrix.png]
+Naive Bayes: ![Testing Set Confusion Matrix](https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Testing%20confusion%20matrix.png)
 
 
 ```
