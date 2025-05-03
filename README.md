@@ -55,14 +55,10 @@ Our best model (Random Forest) achieved near-perfect classification performance 
 * **Models:**
 
   * Random Forest Classifier
-  * Gaussian Naive Bayes
-  * # Naive Bayes Model Performance
+  * Gaussian Naive Baye  
+  *  # Naive Bayes Model Performance
 
-This section summarizes the confusion matrices for the Naive Bayes classifier on the mushroom dataset. Place your saved confusion matrix images in the `figures/` folder and name them as follows:
-
-* Training Confusion Matrix[https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Testing%20confusion%20matrix.png]
-* Validation Set Confusion Matrix[https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Validation%20confusion%20matrix.png]
-* Testing Confusion Matrix[https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Testing%20confusion%20matrix.png]
+This section summarizes the confusion matrices for the Naive Bayes classifier on the mushroom dataset. 
 
 ---
 
