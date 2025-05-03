@@ -202,8 +202,6 @@ rf.fit(X_train, y_train)
    ```
 ---
 
-*Adapt this section to your actual algorithm (e.g. Naive Bayes, XGBoost) and record your precise metric values or Kaggle score.*
-
 
 ## Conclusions
 
