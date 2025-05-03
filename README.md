@@ -60,15 +60,15 @@ Our best model (Random Forest) achieved near-perfect classification performance 
 
 This section summarizes the confusion matrices for the Naive Bayes classifier on the mushroom dataset. Place your saved confusion matrix images in the `figures/` folder and name them as follows:
 
-* `figures/nb_train_cm.png`
-* `figures/nb_val_cm.png`
-* `figures/nb_test_cm.png`
+* Training Confusion Matrix[https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Testing%20confusion%20matrix.png]
+* Validation Set Confusion Matrix[https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Validation%20confusion%20matrix.png]
+* Testing Confusion Matrix[https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Testing%20confusion%20matrix.png]
 
 ---
 
 ## 1. Training Set Confusion Matrix
 
-![Naive Bayes: Training Confusion Matrix](figures/nb_train_cm.png)
+Naive Bayes: Training Confusion Matrix[https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Testing%20confusion%20matrix.png]
 
 ```
  Predicted ⟶   0 (edible)    1 (poisonous)
@@ -87,7 +87,7 @@ True 0 (edible)      3366               0
 
 ## 2. Validation Set Confusion Matrix
 
-![Naive Bayes: Validation Confusion Matrix](figures/nb_val_cm.png)
+Naive Bayes: Validation Confusion Matrix [https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Validation%20confusion%20matrix.png]
 
 ```
  Predicted ⟶   0 (edible)    1 (poisonous)
@@ -106,7 +106,8 @@ True 0 (edible)       421               0
 
 ## 3. Testing Set Confusion Matrix
 
-![Naive Bayes: Testing Confusion Matrix](figures/nb_test_cm.png)
+Naive Bayes: Testing Confusion Matrix[https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Testing%20confusion%20matrix.png]
+
 
 ```
  Predicted ⟶   0 (edible)    1 (poisonous)
