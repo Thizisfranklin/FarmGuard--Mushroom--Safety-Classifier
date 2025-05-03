@@ -45,8 +45,14 @@ Our best model (Random Forest) achieved near-perfect classification performance 
 
 * Crosstabulations for each feature against the class label.
 * Histograms and bar plots highlighting distribution differences 
-
-
+  Some Data
+    ![TSome Data](https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Screenshot%202025-05-03%20121750.png)
+    ![TSome Data](https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Screenshot%202025-05-03%20121919.png)
+    ![TSome Data](https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Screenshot%202025-05-03%20122020.png)
+    ![TSome Data](https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Screenshot%202025-05-03%20122055.png)
+    ![TSome Data](https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Screenshot%202025-05-03%20122116.png)
+**Overall**  
+By lining up edible vs. poisonous counts side‑by‑side, you can quickly spot which feature levels are strong red flags (e.g. foul odor, knobbed cap‑shape, yellow cap‑color, non‑bruising) versus safe signals (e.g. almond/anise smell, bell or sunken cap, red/orange color, bruising). These visual patterns guided our feature selection and gave immediate insight into why even a simple Naive Bayes or Random Forest model can separate these two classes with near‑perfect accuracy.  
 ## Problem Formulation
 
 * **Input:** Preprocessed feature matrix (`X`) with one-hot and label-encoded variables.
