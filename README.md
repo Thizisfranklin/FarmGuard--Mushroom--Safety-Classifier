@@ -44,8 +44,7 @@ Our best model (Random Forest) achieved near-perfect classification performance 
 ## Data Visualization
 
 * Crosstabulations for each feature against the class label.
-* Histograms and bar plots highlighting distribution differences (e.g., certain odors correlated strongly with poisonous labels).
-
+* Histograms and bar plots highlighting distribution differences 
 
 
 ## Problem Formulation
@@ -157,6 +156,54 @@ From these confusion matrices, the key metrics for the “poisonous” class are
 | Gaussian Naive Bayes | 0.98      | 0.98    | 0.98     |
 
 * **ROC Curves:** Plotted for both models showing near-perfect AUC.
+* # Machine Learning
+
+This section describes the end‑to‑end ML pipeline applied to the Mushroom Classification challenge.
+
+## Problem Formulation
+
+1. **Remove unneeded columns**
+
+   * Dropped constant or redundant columns (e.g. `veil-type`), and any row identifiers (none present).
+
+2. **Encode categorical features**
+
+   * All 22 descriptive features (cap-shape, odor, gill-color, etc.) were one-hot encoded via `pd.get_dummies()`.
+
+3. **Encode target**
+
+   * Mapped `class` values: `e` → 0 (edible), `p` → 1 (poisonous).
+
+4. **Train / Validation / Test split**
+
+   * Shuffled with fixed `random_state` for reproducibility and split:  80% train / 10% validation / 10% test.
+
+## Train ML Algorithm
+
+* **Model:** RandomForestClassifier (100 trees, `random_state=42`).
+* **Rationale:** Quick, robust baseline to verify end‑to‑end pipeline.
+
+```python
+from sklearn.ensemble import RandomForestClassifier
+
+rf = RandomForestClassifier(n_estimators=100, random_state=42)
+rf.fit(X_train, y_train)
+```
+
+* **Goal:** Obtain a non‑trivial result rather than fully optimized performance at this stage.
+
+## Evaluate Performance on Validation Sample
+
+1. **Metrics:** accuracy, precision, recall, F1‑score:
+
+   ```python
+   from sklearn.metrics import classification_report
+   print(classification_report(y_val, rf.predict(X_val)))
+   ```
+---
+
+*Adapt this section to your actual algorithm (e.g. Naive Bayes, XGBoost) and record your precise metric values or Kaggle score.*
+
 
 ## Conclusions
 
