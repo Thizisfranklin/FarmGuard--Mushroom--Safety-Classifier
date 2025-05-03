@@ -249,11 +249,19 @@ rf.fit(X_train, y_train)
 * `model_training.ipynb`: trains Random Forest and Naive Bayes models.
 * `submission.csv`: example Kaggle submission file.
 
-## Software Setup
-
-* Python 3.8+
-* `pip install numpy pandas scikit-learn matplotlib`
+ **Software Setup**
+  - pandas
+  - numpy
+  - matplotlib
+  - skikit-learn:
+     - model_selection
+     - naive_bayes
+     - preprocessing
+     - metrics
+     - metrics.ConfusionMatrixDisplay
+ 
 
 ## Citations
 
 * Kaggle Mushroom Classification dataset: [https://www.kaggle.com/uciml/mushroom-classification](https://www.kaggle.com/uciml/mushroom-classification)
+  
