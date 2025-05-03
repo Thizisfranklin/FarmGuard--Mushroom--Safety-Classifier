@@ -56,7 +56,7 @@ Our best model (Random Forest) achieved near-perfect classification performance 
 
   * Random Forest Classifier
   * Gaussian Naive Baye  
-  *  # Naive Bayes Model Performance
+# Naive Bayes Model Performance
 
 This section summarizes the confusion matrices for the Naive Bayes classifier on the mushroom dataset. 
 
