@@ -56,6 +56,88 @@ Our best model (Random Forest) achieved near-perfect classification performance 
 
   * Random Forest Classifier
   * Gaussian Naive Bayes
+  * # Naive Bayes Model Performance
+
+This section summarizes the confusion matrices for the Naive Bayes classifier on the mushroom dataset. Place your saved confusion matrix images in the `figures/` folder and name them as follows:
+
+* `figures/nb_train_cm.png`
+* `figures/nb_val_cm.png`
+* `figures/nb_test_cm.png`
+
+---
+
+## 1. Training Set Confusion Matrix
+
+![Naive Bayes: Training Confusion Matrix](figures/nb_train_cm.png)
+
+```
+ Predicted ⟶   0 (edible)    1 (poisonous)
+True 0 (edible)      3366               0
+     1 (poisonous)     76            3057
+```
+
+* **True Negatives (TN):** 3366 (edible correctly classified)
+* **False Positives (FP):** 0 (no edible misclassified as poisonous)
+* **False Negatives (FN):** 76 (poisonous misclassified as edible)
+* **True Positives (TP):** 3057 (poisonous correctly classified)
+
+> **Interpretation:** On the training data, the model never falsely labels an edible mushroom as poisonous (perfect precision), but it misses 76 poisonous samples (recall ≈ 0.98).
+
+---
+
+## 2. Validation Set Confusion Matrix
+
+![Naive Bayes: Validation Confusion Matrix](figures/nb_val_cm.png)
+
+```
+ Predicted ⟶   0 (edible)    1 (poisonous)
+True 0 (edible)       421               0
+     1 (poisonous)     11             380
+```
+
+* **TN:** 421
+* **FP:** 0
+* **FN:** 11
+* **TP:** 380
+
+> **Interpretation:** On held‑out validation data, the model again achieves perfect precision (no false positives) and recalls 380/391 poisonous samples (\~97%).
+
+---
+
+## 3. Testing Set Confusion Matrix
+
+![Naive Bayes: Testing Confusion Matrix](figures/nb_test_cm.png)
+
+```
+ Predicted ⟶   0 (edible)    1 (poisonous)
+True 0 (edible)       421               0
+     1 (poisonous)      9             383
+```
+
+* **TN:** 421
+* **FP:** 0
+* **FN:** 9
+* **TP:** 383
+
+> **Interpretation:** Final test performance is consistent: zero false positives, and only 9 poisonous mushrooms missed (recall ≈ 0.98).
+
+---
+
+## Summary Metrics
+
+From these confusion matrices, the key metrics for the “poisonous” class are:
+
+| Split      | Precision | Recall | F1‑Score |
+| ---------- | --------- | ------ | -------- |
+| Training   | 1.00      | 0.98   | 0.99     |
+| Validation | 1.00      | 0.97   | 0.99     |
+| Testing    | 1.00      | 0.98   | 0.99     |
+
+* **Precision = 1.00** (model never raises a false alarm on edibles)
+* **Recall ≈ 0.97–0.98** (a handful of poisonous mushrooms go undetected)
+
+**Note:** To reduce false negatives (missed poisonous cases), consider threshold tuning or cost‑sensitive methods, or compare against ensemble models like Random Forest.
+
 * **Hyperparameters:**
 
   * Random Forest: `n_estimators=100`, `max_depth=None`, `random_state=42`
