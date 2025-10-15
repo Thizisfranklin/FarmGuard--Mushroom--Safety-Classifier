@@ -15,7 +15,9 @@ Visual and morphological traits (odor, gill size, cap shape/color, bruising) are
 
 ---
 
-## What We Built (3‑Week Pilot)
+## What I Built (3‑Week Pilot)
+
+I built a tool that helps farms tell edible mushrooms from poisonous ones. It learns from example data and flags anything risky; if it’s unsure, it sends the item to a quick manual recheck. In testing it hit ~99% accuracy, cutting mistakes, improving safety, and saving more good product
 1) **Data & EDA**
 - Used the Kaggle “Mushroom Classification” dataset as a proxy for morphology/odor patterns.
 - One‑hot encoded categorical fields; dropped heavy‑missing `stalk-root`.  
@@ -105,5 +107,5 @@ Early estimates indicate a **payback period < [N] months** with continued gains 
 
 ---
 
-### Portfolio Blurb (copy/paste)
+### Summary
 Built a farm‑ready mushroom classifier that frames decisions with **asymmetric costs**. Random Forest achieved near‑perfect accuracy; a **gray‑zone recheck** policy pushed poisonous recall to ≥99% while preserving yield. Clear EDA patterns (odor, morphology) explain the model’s success and guide sustainable operations.
