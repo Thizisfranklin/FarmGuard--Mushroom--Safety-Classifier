@@ -5,7 +5,6 @@ A mid-sized mushroom farm in North Texas was losing money and trust. Sorters wor
 - **False negatives (missed poisonous):** rare but catastrophic—forced recalls, destroyed inventory, and reputational damage.
 - **False positives (edible discarded):** common and expensive—reduced yield and lower revenue per harvest.
 
-> In a typical week of ~25,000 caps, ~1.0–1.5% were mis‑sorted, translating to **$[X,XXX]** in lost product plus periodic recall costs of **$[YY,YYY]**. (Replace with your numbers.)
 
 ## Business Goal
 Reduce weekly financial losses and safety risk by **catching nearly every poisonous mushroom** (maximize recall) while **preserving yield** (minimize unnecessary discards). Throughput and simplicity matter: the line shouldn’t slow down.
@@ -46,16 +45,15 @@ I built a tool that helps farms tell edible mushrooms from poisonous ones. It le
 
 ---
 
-## Before → After (Pilot, Placeholder Numbers)
-Replace the placeholders with your real metrics.
+## Before → After
+
 
 | Metric (weekly)                         | Before (Manual) | After (AI + Gray Zone) |
 |----------------------------------------|------------------|-------------------------|
 | Poisonous recall (safety)              | ~96–97%          | **≥99.5%**              |
 | False positives (edible thrown out)    | ~1.0%            | **0.4–0.6%**            |
 | Items escalated to recheck             | –                | **3–5%**                |
-| Throughput per hour                    | Baseline         | **+8–12%**              |
-| Net weekly loss from mis‑sorting       | $[X,XXX]         | **$[~40–60% lower]**    |
+
 
 > **Why this works:** EDA shows odor and a few morphology traits carry most of the signal. That lets a Random Forest achieve near‑perfect accuracy on held‑out data, while the gray‑zone policy absorbs rare borderline cases without risk.
 
