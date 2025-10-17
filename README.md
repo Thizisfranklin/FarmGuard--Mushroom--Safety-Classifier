@@ -27,7 +27,7 @@ I built a tool that helps farms tell edible mushrooms from poisonous ones. It le
   ![EDA 4](https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Screenshot%202025-05-03%20122055.png)  
   ![EDA 5](https://github.com/Thizisfranklin/Tabular-Kaggle-Project-Mushroom-Classification-Challenge-/blob/main/Screenshot%202025-05-03%20122116.png)
 
-**What the visuals proved (in business terms):**
+**What the visuals proved:**
 - **Odor** and a few morphology traits have large, directional effects.  
   → Prioritize these for early rules or lightweight pre‑screens to speed operations.  
 - Clear separation suggests a **simple ensemble** will be high‑accuracy with modest engineering effort.  
