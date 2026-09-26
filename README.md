@@ -14,4 +14,4 @@ A tabular classification exercise exploring how mushroom characteristics relate 
 
 [View the test confusion matrix](Testing%20confusion%20matrix.png) · [View the exploratory plots](Screenshot%202025-05-03%20121750.png)
 
-**Scope:** This is a dataset exercise, not a deployed farm sorting or food safety system. The repository does not include the operational dashboard, recheck process, or verified financial outcomes previously described here. Do not use model predictions to determine whether a mushroom is safe to eat.
+**Scope:** This is a dataset exercise, not a deployed farm sorting or food safety system. The repository does not include the operational dashboard, recheck process, or verified financial outcomes. Do not use model predictions to determine whether a mushroom is safe to eat.
